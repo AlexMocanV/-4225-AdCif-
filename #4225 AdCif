@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,uc,maxi=-1,s;
+    cin>>n;
+    while(n>0)
+    {
+        uc=n%10;
+        if(uc>maxi)
+        {
+            maxi=uc;
+            s+=maxi;
+           // cout<<maxi<<" ";
+        }
+        n=n/10;
+    }
+    cout<<s;
+    return 0;
+}
